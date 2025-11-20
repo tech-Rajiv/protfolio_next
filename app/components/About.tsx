@@ -1,8 +1,5 @@
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
-import { ArrowRight, Award, Briefcase, Code } from "lucide-react";
+import { Briefcase, Code } from "lucide-react";
 import React from "react";
-import Education from "./Education";
 
 function About() {
   return (

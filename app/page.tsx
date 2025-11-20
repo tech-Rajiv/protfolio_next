@@ -39,7 +39,6 @@ export default function Portfolio() {
       <main className="pt-16">
         <Hero />
         <About />
-
         <Experience />
         <Projects />
         <Contact />

@@ -6,18 +6,16 @@ import React from "react";
 
 function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
-      experience
-      {/* <div className="container mx-auto max-w-4xl">
-        <div className="flex items-center gap-3 mb-8">
-          <Badge
-            variant="outline"
-            className="flex gap-2 items-center justify-center text-sm"
-          >
-            <ArrowRight size={16} strokeWidth={1.75} color="red" />
-            Experiences...
-          </Badge>
+    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50">
+      <div className="container mx-auto max-w-5xl">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Experinces</h2>
+          <div className="w-16 h-1 bg-foreground mx-auto mb-6"></div>
+          <p className="text-lg text-foreground/80  max-w-2xl mx-auto">
+            Crafting digital experiences through code and creativity
+          </p>
         </div>
+
         <div className="space-y-6">
           <Card className="p-6 sm:p-8">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
@@ -27,9 +25,7 @@ function Experience() {
                 </h3>
                 <p className="text-muted-foreground">Tech Solutions Inc.</p>
               </div>
-              <span className="text-sm text-muted-foreground">
-                2023 - Present
-              </span>
+              <span className="text-sm text-foreground">2023 - Present</span>
             </div>
             <Separator className="my-4" />
             <ul className="space-y-2 text-muted-foreground">
@@ -40,12 +36,7 @@ function Experience() {
                   users
                 </span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span>
-                  Improved application performance by 40% through optimization
-                </span>
-              </li>
+
               <li className="flex gap-2">
                 <span className="text-primary mt-1">•</span>
                 <span>
@@ -63,7 +54,7 @@ function Experience() {
                   Digital Innovations Ltd.
                 </p>
               </div>
-              <span className="text-sm text-muted-foreground">2022 - 2023</span>
+              <span className="text-sm text-foreground">2022 - 2023</span>
             </div>
             <Separator className="my-4" />
             <ul className="space-y-2 text-muted-foreground">
@@ -79,16 +70,10 @@ function Experience() {
                   Implemented RESTful APIs and integrated third-party services
                 </span>
               </li>
-              <li className="flex gap-2">
-                <span className="text-primary mt-1">•</span>
-                <span>
-                  Collaborated with design team to create responsive UI/UX
-                </span>
-              </li>
             </ul>
           </Card>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }

@@ -6,21 +6,19 @@ import React from "react";
 
 function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50">
-      projects
-      {/* <div className="container mx-auto max-w-4xl">
-        <div className="flex items-center gap-3 mb-8">
-          <Badge
-            variant="outline"
-            className="flex gap-2 items-center justify-center text-sm"
-          >
-            <ArrowRight size={16} strokeWidth={1.75} color="red" />
-            Projects...
-          </Badge>
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 ">
+      <div className="container mx-auto max-w-5xl">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
+          <div className="w-16 h-1 bg-foreground mx-auto mb-6"></div>
+          <p className="text-lg text-foreground/80  max-w-2xl mx-auto">
+            Crafting digital experiences through code and creativity
+          </p>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
           <Card className="p-5 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-gray-100 rounded-md mb-5"></div>
+            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -43,7 +41,7 @@ function Projects() {
             </div>
           </Card>
           <Card className="p-5 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-gray-100 rounded-md mb-5"></div>
+            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -66,7 +64,7 @@ function Projects() {
             </div>
           </Card>
           <Card className="p-5 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-gray-100 rounded-md mb-5"></div>
+            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -89,7 +87,7 @@ function Projects() {
             </div>
           </Card>
           <Card className="p-5 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-gray-100 rounded-md mb-5"></div>
+            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -112,7 +110,7 @@ function Projects() {
             </div>
           </Card>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }
