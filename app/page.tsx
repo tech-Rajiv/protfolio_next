@@ -39,7 +39,7 @@ export default function Portfolio() {
       <main className="pt-16">
         <Hero />
         <About />
-        <Education />
+
         <Experience />
         <Projects />
         <Contact />

@@ -1,92 +1,90 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Award, Briefcase, Code } from "lucide-react";
 import React from "react";
+import Education from "./Education";
 
 function About() {
   return (
-    <section
-      id="about"
-      className="py-20 container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"
-    >
-      <div className="flex flex-col items-start gap-3 mb-8">
-        <Badge
-          variant="outline"
-          className="flex gap-2 items-center justify-center text-md"
-        >
-          <ArrowRight size={16} strokeWidth={1.75} color="red" />
-          About me?
-        </Badge>
-      </div>
-      <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-        I'm a passionate full stack developer with expertise in building modern
-        web applications. I love turning complex problems into simple,
-        beautiful, and intuitive solutions.
-      </p>
-
-      <div className="space-y-6">
-        <Card className="p-6 sm:p-8">
-          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-            <h3 className="text-xl font-semibold">
-              Masters in Computer Application
-            </h3>
-            <span className="text-sm text-muted-foreground">2018 - 2022</span>
-          </div>
-          <p className="text-muted-foreground mb-2">
-            Indian Institute of Technology
+    <section id="about" className="py-16 md:py-24 px-4 ">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+          <div className="w-16 h-1 bg-foreground mx-auto mb-6"></div>
+          <p className="text-lg text-foreground/80  max-w-2xl mx-auto">
+            Crafting digital experiences through code and creativity
           </p>
-          <p className="text-sm text-muted-foreground">GPA: 8.5/10</p>
-        </Card>
-        <Card className="p-6 sm:p-8">
-          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-            <h3 className="text-xl font-semibold">
-              Bachelor of Technology in Computer Science
-            </h3>
-            <span className="text-sm text-muted-foreground">2016 - 2018</span>
-          </div>
-          <p className="text-muted-foreground mb-2">Delhi Public School</p>
-          <p className="text-sm text-muted-foreground">Percentage: 95%</p>
-        </Card>
-      </div>
-
-      {/* <div className="container mx-auto max-w-4xl">
-        <div className="flex flex-col items-start gap-3 mb-8">
-          <Badge
-            variant="outline"
-            className="flex gap-2 items-center justify-center text-sm"
-          >
-            <ArrowRight size={16} strokeWidth={1.75} color="red" />
-            About me?
-          </Badge>
         </div>
-        <Card className="p-6 sm:p-8">
-          <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-            I'm a passionate full stack developer with expertise in building
-            modern web applications. I love turning complex problems into
-            simple, beautiful, and intuitive solutions.
-          </p>
-          <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-            With a strong foundation in both frontend and backend technologies,
-            I create seamless user experiences backed by robust and scalable
-            architectures.
-          </p>
+
+        <div className="grid md:grid-cols-2 gap-12 items-top mb-16">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Skills</h3>
-            <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">React</Badge>
-              <Badge variant="secondary">Next.js</Badge>
-              <Badge variant="secondary">TypeScript</Badge>
-              <Badge variant="secondary">Node.js</Badge>
-              <Badge variant="secondary">Python</Badge>
-              <Badge variant="secondary">PostgreSQL</Badge>
-              <Badge variant="secondary">MongoDB</Badge>
-              <Badge variant="secondary">Tailwind CSS</Badge>
-              <Badge variant="secondary">Docker</Badge>
-              <Badge variant="secondary">AWS</Badge>
+            <p className="text-primary/80  text-base md:text-lg leading-relaxed mb-6">
+              I'm a passionate fullstack developer with a keen eye for design
+              and a love for solving complex problems. With over 5 years of
+              experience in web development, I've worked on projects ranging
+              from startups to enterprise-level applications.
+            </p>
+            <p className="text-primary/80  text-base md:text-lg leading-relaxed">
+              When I'm not coding, I enjoy exploring new technologies,
+              contributing to open-source projects, and sharing knowledge with
+              the developer community.
+            </p>
+          </div>
+
+          {/* <Education /> */}
+
+          <div className="space-y-6">
+            <div className="rounded-2xl p-6 border border-slate-200 ">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg  bg-muted  flex items-center justify-center flex-shrink-0">
+                  <Code className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold  mb-2">Development</h3>
+                  <p className="text-primary/80  text-sm">
+                    Expert in building scalable web applications with modern
+                    technologies and best practices.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className=" rounded-2xl p-6 border border-slate-2  00 ">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-muted  flex items-center justify-center flex-shrink-0">
+                  <Briefcase className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Professional</h3>
+                  <p className="text-primary/80 text-sm">
+                    Collaborated with diverse teams to deliver high-quality
+                    solutions on time and within budget.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </Card>
-      </div> */}
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-muted rounded-2xl p-8 md:p-12">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold  mb-2">5+</div>
+            <p className="text-primary/80 text-sm">Projects Completed</p>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold  mb-2">1+</div>
+            <p className="text-primary/80  text-sm">Years Experience</p>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold mb-2">3+</div>
+            <p className="text-primary/80  text-sm">Happy Clients</p>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold  mb-2">10+</div>
+            <p className="text-primary/80  text-sm">Technologies</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
