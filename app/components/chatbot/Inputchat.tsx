@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { InputChatProps } from "./ChatArea";
+import { Send, SendHorizontal } from "lucide-react";
 
 function Inputchat({
   allMessages,
@@ -41,19 +42,22 @@ function Inputchat({
     }
   };
   return (
-    <div className="inp flex gap-2">
+    <div className="inp flex gap-2 md:mt-2">
       <input
         type="text"
         placeholder="ask about rajiv"
-        className="bg-gray-100 p-2.5 rounded-xl w-full"
+        className="bg-muted text-primary p-2.5 rounded-xl w-full"
         value={input}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={(e) => {
+          setInput(e.target.value), setError("");
+        }}
       />
       <button
         onClick={handleChat}
-        className="bg-black text-white px-3  rounded-xl"
+        className="border bg-muted text-primary flex gap-2 items-center px-3  rounded-xl"
       >
-        Ask
+        <span className="hidden md:block">Ask</span>
+        <Send className="w-6 h-6 text-primary" />
       </button>
     </div>
   );

@@ -1,12 +1,18 @@
+"use client";
 import { BotMessageSquare, CircleUserRound, Frown } from "lucide-react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { InputChatProps } from "./ChatArea";
 
 function AllMessages({ allMessages, loading, error }: InputChatProps) {
+  const bottomRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [allMessages]);
+
   return (
     <div className="w-full h-full rounded-xl my-2 py-2 overflow-y-auto">
       {/* This part pushes content to the bottom */}
-      <div className="p-1 area w-full h-full flex flex-col justify-end gap-2">
+      <div className="p-1 area  w-full flex flex-col justify-end gap-2">
         {allMessages?.map((message, index) => (
           <div
             key={index}
@@ -15,6 +21,7 @@ function AllMessages({ allMessages, loading, error }: InputChatProps) {
             }`}
           >
             <div
+              ref={bottomRef}
               className={`flex ${
                 message?.role === "user" ? "flex-row-reverse" : ""
               } md:max-w-[80%] p-2  gap-2 items-end`}
@@ -28,7 +35,7 @@ function AllMessages({ allMessages, loading, error }: InputChatProps) {
               </div>
               <div
                 className={`text-sm sm:text-md rounded-lg border p-2 ${
-                  message?.role === "user" ? "bg-gray-100" : "bg-white"
+                  message?.role === "user" ? "" : "bg-muted text-primary"
                 }`}
               >
                 {message?.content}
@@ -43,7 +50,7 @@ function AllMessages({ allMessages, loading, error }: InputChatProps) {
           </div>
         )}
         {error && (
-          <div className="flex gap-2 items-center border p-2 rounded-md border-red-300 bg-red-50">
+          <div className="flex gap-2 items-center border p-2 rounded-md bg--foreground border-red-500">
             <Frown size={20} strokeWidth={1.75} />
             Sorry, my Bot is sleeping...
           </div>

@@ -37,25 +37,27 @@ PROJECTS:
 export async function POST(request) {
   const { message, history } = await request.json();
   console.log(" message, history: ", message, history);
+  return NextResponse.json({
+    reply: "lorem has ndf,nknfd ,mfhjkhs iuyuiewrb trktj",
+  });
+  // try {
+  //   const completion = await client.chat.completions.create({
+  //     model: "llama-3.3-70b-versatile",
+  //     messages: [
+  //       { role: "system", content: FOR_SYSTEM },
 
-  try {
-    const completion = await client.chat.completions.create({
-      model: "llama-3.3-70b-versatile",
-      messages: [
-        // { role: "system", content: SYSTEM_PROMPT },
+  //       // Conversation history (small)
+  //       ...(history || []),
 
-        // Conversation history (small)
-        ...(history || []),
+  //       // User message
+  //       { role: "user", content: message },
+  //     ],
+  //   });
 
-        // User message
-        { role: "user", content: message },
-      ],
-    });
+  //   const reply = completion.choices[0].message.content;
 
-    const reply = completion.choices[0].message.content;
-
-    return NextResponse.json({ reply });
-  } catch (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  }
+  //   return NextResponse.json({ reply });
+  // } catch (error) {
+  //   return NextResponse.json({ error: error.message }, { status: 500 });
+  // }
 }

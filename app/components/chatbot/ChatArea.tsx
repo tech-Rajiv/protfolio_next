@@ -10,7 +10,7 @@ function ChatArea({ setAllMessages, allMessages }: ChatAreaProps) {
 
   console.log("alllmessss", allMessages);
   return (
-    <div className="textarea  bg-gray-50 shadow text-black w-[90vw] sm:w-[60vw] sm:w-[50vw]  lg:w-[40vw] h-[70vh] rounded-xl p-3 sm:p-5 flex flex-col justify-between">
+    <div className="textarea bg-muted-foreground text-muted shadow text-black w-[90vw] sm:w-[60vw] sm:w-[50vw]  lg:w-[40vw] h-[70vh] rounded-xl px-3 py-4 sm:p-6 flex flex-col justify-between ">
       <HeadingChat />
       <AllMessages
         allMessages={allMessages}

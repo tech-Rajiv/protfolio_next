@@ -9,9 +9,9 @@ function HeadingChat() {
         <h2 className="font-medium">Rajiv's Bot</h2>
       </div>
 
-      {/* <p className="text-gray-500 text-xs sm:text-sm leading-snug">
-        👋 Hi there! ask me anthing that you to know about Rajiv.
-      </p> */}
+      <p className="text-sm my-1 hidden md:block leading-snug">
+        Hi there! ask me anthing that you to know about Rajiv.
+      </p>
     </div>
   );
 }

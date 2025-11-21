@@ -11,7 +11,7 @@ function ChatBotCover() {
     setChatOpen((prev) => !prev);
   };
   return (
-    <div className="flex  flex-col gap-2">
+    <div className="flex flex-col gap-2">
       {chatOpen && (
         <ChatArea allMessages={allMessages} setAllMessages={setAllMessages} />
       )}
