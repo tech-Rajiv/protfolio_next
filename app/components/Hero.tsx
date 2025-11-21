@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[100vh] flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8 bg-muted/50 py-28"
+      className="min-h-[100vh] flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8  py-28"
     >
       <div className="top"></div>
       <div className="name flex flex-col gap-2 sm:gap-5 md:flex-row justify-center ">

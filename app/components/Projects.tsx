@@ -1,8 +1,9 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import React from "react";
+import MoreView from "./MoreView";
 
 function Projects() {
   return (
@@ -17,8 +18,8 @@ function Projects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <Card className="p-3 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
+          <Card className="p-3 flex flex-col hover:shadow">
+            <div className="img w-full h-48 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -40,8 +41,8 @@ function Projects() {
               </Button>
             </div>
           </Card>
-          <Card className="p-3 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
+          <Card className="p-3 flex flex-col hover:shadow">
+            <div className="img w-full h-48 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -63,8 +64,8 @@ function Projects() {
               </Button>
             </div>
           </Card>
-          <Card className="p-3 flex flex-col">
-            <div className="img w-full h-60 p-2 bg-muted rounded-md mb-5"></div>
+          <Card className="p-3 flex flex-col hover:shadow">
+            <div className="img w-full h-48 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
             <p className="text-muted-foreground mb-4 flex-grow">
               A full-featured e-commerce platform with payment integration,
@@ -87,6 +88,7 @@ function Projects() {
             </div>
           </Card>
         </div>
+        <MoreView name={"view more projects..."} />
       </div>
     </section>
   );

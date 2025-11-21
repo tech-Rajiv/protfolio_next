@@ -1,5 +1,7 @@
 import { Briefcase, Code } from "lucide-react";
 import React from "react";
+import MoreView from "./MoreView";
+import Education from "./Education";
 
 function About() {
   return (
@@ -12,8 +14,7 @@ function About() {
             Crafting digital experiences through code and creativity
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-top mb-16">
+        <div className="grid md:grid-cols-2 gap-12 items-top mb-10">
           <div>
             <p className="text-primary/80  text-base md:text-lg leading-relaxed mb-6">
               I'm a passionate fullstack developer with a keen eye for design
@@ -28,59 +29,11 @@ function About() {
             </p>
           </div>
 
-          {/* <Education /> */}
-
-          <div className="space-y-6">
-            <div className="rounded-2xl p-6 border border-slate-200 ">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg  bg-muted  flex items-center justify-center flex-shrink-0">
-                  <Code className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold  mb-2">Development</h3>
-                  <p className="text-primary/80  text-sm">
-                    Expert in building scalable web applications with modern
-                    technologies and best practices.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className=" rounded-2xl p-6 border border-slate-2  00 ">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-muted  flex items-center justify-center flex-shrink-0">
-                  <Briefcase className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Professional</h3>
-                  <p className="text-primary/80 text-sm">
-                    Collaborated with diverse teams to deliver high-quality
-                    solutions on time and within budget.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="img w-full h-full bg-muted rounded-xl"></div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-muted rounded-2xl p-8 md:p-12">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold  mb-2">5+</div>
-            <p className="text-primary/80 text-sm">Projects Completed</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold  mb-2">1+</div>
-            <p className="text-primary/80  text-sm">Years Experience</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-2">3+</div>
-            <p className="text-primary/80  text-sm">Happy Clients</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold  mb-2">10+</div>
-            <p className="text-primary/80  text-sm">Technologies</p>
-          </div>
-        </div>
+        {/* <Education /> */}
+        <MoreView name={"know more about me..."} />
       </div>
     </section>
   );
