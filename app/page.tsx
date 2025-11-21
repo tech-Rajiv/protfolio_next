@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ChatBotCover from "./components/chatbot/ChatBotCover";
 import Services from "./components/Services";
+import Skills from "./components/Skills";
 
 // export const metadata = {
 //   title: "Rajiv Mishra – Portfolio",
@@ -40,7 +41,9 @@ export default function Portfolio() {
       <main className="pt-16">
         <Hero />
         <About />
-        <Services />
+        {/* <Services /> */}
+        <Skills />
+
         <Projects />
         <Experience />
         <Contact />

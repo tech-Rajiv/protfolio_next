@@ -19,12 +19,12 @@ function ChatBotCover() {
       <div className="ball flex justify-end">
         <button
           onClick={handleChatOpen}
-          className="open w-12 h-12 bg-primary text-muted  flex justify-center items-center rounded-full"
+          className="open w-14 h-14 bg-primary text-muted  flex justify-center items-center rounded-full"
         >
           {chatOpen ? (
-            <X size={24} strokeWidth={2} />
+            <X size={28} strokeWidth={2} />
           ) : (
-            <BotMessageSquare size={24} strokeWidth={1.75} />
+            <BotMessageSquare size={28} strokeWidth={1.75} />
           )}
         </button>
       </div>

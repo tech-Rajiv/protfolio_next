@@ -19,7 +19,7 @@ function NavBar() {
     }
   };
   return (
-    <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm shadow z-50">
+    <nav className="fixed top-0 w-full  md:py-2 bg-background/80 backdrop-blur-sm shadow z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <span className="text-xl font-semibold">RM</span>
@@ -64,7 +64,7 @@ function NavBar() {
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-5 w-5" />
+                  <Menu className="h-8 w-8" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[250px]">

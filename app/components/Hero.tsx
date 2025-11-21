@@ -9,13 +9,7 @@ function Hero() {
       className="min-h-[100vh] flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8  py-28"
     >
       <div className="top"></div>
-      <div className="name flex flex-col gap-2 sm:gap-5 md:flex-row justify-center ">
-        .
-        {/* <h2 className="text-4xl md:text-6xl  font-bold">Hi, i'm Rajiv.</h2>
-        <h2 className="text-4xl md:text-6xl font-bold text-muted-foreground">
-          I'm a Full Stack Developer.
-        </h2> */}
-      </div>
+      <div className="name flex flex-col gap-2 sm:gap-5 md:flex-row justify-center "></div>
       <div className="links flex gap-3">
         <Button variant="secondary" size="icon">
           <Github className="h-5 w-5" />

@@ -3,21 +3,16 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
 import { ArrowRight, Building, Code, Dot } from "lucide-react";
 import React from "react";
+import Headings from "./Headings";
 
 function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50">
+    <section id="experience" className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Experinces</h2>
-          <div className="w-16 h-1 bg-foreground mx-auto mb-6"></div>
-          <p className="text-lg text-foreground/80  max-w-2xl mx-auto">
-            Crafting digital experiences through code and creativity
-          </p>
-        </div>
+        <Headings small={"history"} big={"My Expireince"} />
 
-        <div className="space-y-6">
-          <Card className="p-6 sm:p-8">
+        <div className="space-y-6 mt-10 md:mt-14">
+          <Card className="p-6 sm:p-8 ">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
               <div>
                 <div className="wrap flex gap-5 items-start">

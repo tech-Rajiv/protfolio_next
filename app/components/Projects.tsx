@@ -4,20 +4,14 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import React from "react";
 import MoreView from "./MoreView";
+import Headings from "./Headings";
 
 function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 ">
+    <section id="projects" className="py-16 md:py-20 bg-muted/50">
       <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
-          <div className="w-16 h-1 bg-foreground mx-auto mb-6"></div>
-          <p className="text-lg text-foreground/80  max-w-2xl mx-auto">
-            Crafting digital experiences through code and creativity
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <Headings small={"projects"} big={"View Works"} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-4 pb-10 md:pb-14 mt-10 md:mt-14">
           <Card className="p-3 flex flex-col hover:shadow">
             <div className="img w-full h-48 p-2 bg-muted rounded-md mb-5"></div>
             <h3 className="text-xl font-semibold mb-3">E-Commerce Platform</h3>
@@ -88,8 +82,8 @@ function Projects() {
             </div>
           </Card>
         </div>
-        <MoreView name={"view more projects..."} />
       </div>
+      <MoreView name={"View All Projects"} />
     </section>
   );
 }

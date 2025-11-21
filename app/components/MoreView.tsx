@@ -1,5 +1,6 @@
 "use client";
-import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, ArrowUpRight, MoveUpRight } from "lucide-react";
 import React from "react";
 
 type moreViewProps = {
@@ -8,11 +9,18 @@ type moreViewProps = {
 
 function MoreView({ name }: moreViewProps) {
   return (
-    <div className="my-5 more border p-2 rounded-xl w-full flex justify-end ">
-      <button className="flex gap-2 hover:text-muted-foreground">
-        <span>{name}</span>
-        <ArrowUpRight className="w-6 h-6" />
-      </button>
+    <div className="btn py-5 flex justify-center">
+      <Button
+        variant={"outline"}
+        className=" font-semibold text-primary border-primary 
+                   hover:bg-primary hover:text-muted group 
+                   transition duration-300 flex items-center gap-2 px-6 py-3"
+      >
+        {name}
+        <span className="text-lg group-hover:translate-x-1 transition duration-300 ease-out">
+          <ArrowRight />
+        </span>
+      </Button>
     </div>
   );
 }
