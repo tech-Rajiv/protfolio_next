@@ -11,8 +11,7 @@ function AllMessages({ allMessages, loading, error }: InputChatProps) {
 
   return (
     <div className="w-full h-full rounded-xl my-2 py-2 overflow-y-auto">
-      {/* This part pushes content to the bottom */}
-      <div className="p-1 area  w-full flex flex-col justify-end gap-2">
+      <div className="p-1 md:p-2 area  w-full flex flex-col justify-end gap-3">
         {allMessages?.map((message, index) => (
           <div
             key={index}

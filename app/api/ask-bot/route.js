@@ -38,7 +38,8 @@ export async function POST(request) {
   const { message, history } = await request.json();
   console.log(" message, history: ", message, history);
   return NextResponse.json({
-    reply: "lorem has ndf,nknfd ,mfhjkhs iuyuiewrb trktj",
+    reply:
+      "My expertise lies in bridging the gap between elegant front-end interfaces (React, Next.js) and robust back-end systems (Node.js, Express, SQL/NoSQL databases).",
   });
   // try {
   //   const completion = await client.chat.completions.create({
