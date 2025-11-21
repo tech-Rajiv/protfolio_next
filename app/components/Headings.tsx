@@ -2,7 +2,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, MoveRight } from "lucide-react";
 import React from "react";
 
-function Headings({ small, big }) {
+type headingProps = {
+  small: String;
+  big: String;
+};
+
+function Headings({ small, big }: headingProps) {
   return (
     <div className="text-center pt-6 px-4 md:pt-10 md:px-6">
       {/* TOP: Contextual Label (Centered) */}

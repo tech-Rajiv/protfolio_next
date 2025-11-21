@@ -1,7 +1,13 @@
 import { GraduationCap } from "lucide-react";
 import React from "react";
 
-function DegreeCard({ name, collageName, year }) {
+type degreeCardProps = {
+  name: String;
+  collageName: String;
+  year: String;
+};
+
+function DegreeCard({ name, collageName, year }: degreeCardProps) {
   return (
     <div className="intro bg-background border rounded-xl p-4 sm:p-5 ">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
