@@ -26,7 +26,7 @@ function Hero() {
 
         <div className="flex flex-col items-start">
           {/* Profile Card */}
-          <div className="w-full rounded-2xl p-2 sm:p-5 bg-muted/50 dark:bg-muted/40 backdrop-blur-sm border border-border/40 shadow-sm flex items-center gap-5">
+          <div className="w-full rounded-2xl p-2 sm:p-5 bg-muted/50 dark:bg-muted/40 backdrop-blur-sm border border-border/40 shadow-sm flex items-center gap-3 sm:gap-5">
             {/* Profile Image */}
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shadow-md border border-border/40">
               <img
@@ -44,8 +44,8 @@ function Hero() {
                   Lorem ipsum
                 </span>
               </p>
-              <h2 className="text-foreground/90 dark:text-white font-semibold text-lg sm:text-2xl lg:text-3xl">
-                Full-Stack Developer
+              <h2 className="text-foreground/90 dark:text-white font-bold text-xl sm:text-2xl lg:text-3xl">
+                Full Stack Developer.
               </h2>
             </div>
           </div>
