@@ -1,9 +1,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
+  ArrowDownToLine,
   BriefcaseBusiness,
   Github,
   Instagram,
+  LinkedinIcon,
   Send,
   Twitter,
 } from "lucide-react";
@@ -72,8 +74,8 @@ function Hero() {
               size="lg"
               className="px-3 sm:px-6 py-3 text-base font-semibold border-primary text-primary hover:bg-primary/10 hover:shadow-md transition-all gap-2"
             >
-              Message Me
-              <Send className="w-5 h-5" />
+              Resume
+              <ArrowDownToLine className="w-5 h-5" />
             </Button>
           </div>
 
@@ -85,6 +87,10 @@ function Hero() {
               {
                 href: "https://www.instagram.com/rajivmishra",
                 icon: Instagram,
+              },
+              {
+                href: "https://www.instagram.com/rajivmishra",
+                icon: LinkedinIcon,
               },
             ].map((s, i) => (
               <a
