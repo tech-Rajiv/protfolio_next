@@ -6,6 +6,7 @@ import {
   Github,
   Instagram,
   LinkedinIcon,
+  Mail,
   Send,
   Twitter,
 } from "lucide-react";
@@ -20,7 +21,11 @@ function Hero() {
       <div className="max-w-xl mx-auto w-full">
         {/* Availability Badge */}
         <div className="flex justify-center mb-5">
-          <Badge className="flex items-center gap-2 px-4 py-1.5 shadow-sm">
+          {/* <Badge className="flex items-center gap-2 px-4 py-1.5 shadow-sm">
+            <span className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span>
+            Available for work
+          </Badge> */}
+          <Badge className="flex items-center gap-2 px-4 py-1.5 shadow-sm bg-green-100 hover:bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200">
             <span className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span>
             Available for work
           </Badge>
@@ -28,7 +33,7 @@ function Hero() {
 
         <div className="flex flex-col items-start">
           {/* Profile Card */}
-          <div className="w-full rounded-2xl p-2 sm:p-5 bg-muted/50 dark:bg-muted/40 backdrop-blur-sm border border-border/40 shadow-sm flex items-center gap-3 sm:gap-5">
+          <div className="w-full rounded-2xl p-3 sm:p-5 bg-muted/50 dark:bg-muted/40 backdrop-blur-sm border border-border/40 shadow-sm flex items-center gap-3 sm:gap-5">
             {/* Profile Image */}
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shadow-md border border-border/40">
               <img
@@ -53,17 +58,16 @@ function Hero() {
           </div>
 
           {/* Description */}
-          <p className="text-base  sm:text-lg text-muted-foreground leading-relaxed mt-8 px-2">
+          <p className="text-base text-center sm:text-start sm:text-lg text-muted-foreground leading-relaxed mt-8 px-2">
             Surat based Full stack web developer, I build scalable,
             high-performance web applications with clean architecture and
             intuitive user experiences.
           </p>
 
-          {/* Buttons */}
-          <div className="flex w-full justify-center items-center gap-3 mt-10">
+          <div className="flex flex-col sm:flex-row w-full justify-center sm:justify-start items-center gap-4 mt-8">
             <Button
               size="lg"
-              className="px-3 sm:px-6  py-3 text-base font-semibold bg-primary hover:bg-primary/90 shadow-sm hover:shadow-lg transition-all gap-2"
+              className="px-6 py-3 text-base font-semibold bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all w-full gap-2 flex items-center justify-center"
             >
               Hire Me
               <BriefcaseBusiness className="w-5 h-5" />
@@ -72,37 +76,26 @@ function Hero() {
             <Button
               variant="outline"
               size="lg"
-              className="px-3 sm:px-6 py-3 text-base font-semibold border-primary text-primary hover:bg-primary/10 hover:shadow-md transition-all gap-2"
+              className="px-6 py-3 text-base font-semibold border-primary text-primary hover:bg-primary/10 hover:shadow-md w-full transition-all gap-2 flex items-center justify-center"
             >
               Resume
               <ArrowDownToLine className="w-5 h-5" />
             </Button>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex justify-center w-full items-center gap-6 mt-8">
-            {[
-              { href: "https://github.com/rajivmishra", icon: Github },
-              { href: "https://twitter.com/rajivmishra", icon: Twitter },
-              {
-                href: "https://www.instagram.com/rajivmishra",
-                icon: Instagram,
-              },
-              {
-                href: "https://www.instagram.com/rajivmishra",
-                icon: LinkedinIcon,
-              },
-            ].map((s, i) => (
-              <a
-                key={i}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-all duration-200 hover:scale-110"
-              >
-                <s.icon className="w-6 h-6" />
-              </a>
-            ))}
+          <div className="flex justify-between max-w-2xl mx-auto  items-center gap-4 mt-8">
+            <Badge variant={"secondary"} className="w-10 h-10 cursor-pointer">
+              <Instagram />
+            </Badge>
+            <Badge variant={"secondary"} className="w-10 h-10 cursor-pointer">
+              <Mail />
+            </Badge>
+            <Badge variant={"secondary"} className="w-10 h-10 cursor-pointer">
+              <Twitter />
+            </Badge>
+            <Badge variant={"secondary"} className="w-10 h-10 cursor-pointer">
+              <LinkedinIcon />
+            </Badge>
           </div>
         </div>
       </div>
