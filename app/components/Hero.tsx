@@ -16,7 +16,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="bg-background dark:bg-gray-950 py-24 sm:py-32 px-4 sm:px-6 lg:px-8 flex items-center"
+      className="bg-background  py-24 sm:py-32 px-4 sm:px-6 lg:px-8 flex items-center"
     >
       <div className="max-w-xl mx-auto w-full">
         {/* Availability Badge */}
