@@ -41,11 +41,11 @@ export default function Portfolio() {
       <main className="pt-16">
         <Hero />
         <About />
+        <Experience />
         {/* <Services /> */}
         <Skills />
 
         <Projects />
-        <Experience />
         <Contact />
       </main>
       <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">

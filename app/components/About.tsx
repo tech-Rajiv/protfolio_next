@@ -7,7 +7,7 @@ import DegreeCard from "./DegreeCard";
 
 function About() {
   return (
-    <section id="about" className="py-16 md:py-20  bg-muted/50">
+    <section id="about" className="py-16 md:py-20  ">
       <div className="max-w-5xl mx-auto px-4 py-5">
         <Headings small={"know me"} big={"About Me"} />
         <div className="wrapper flex flex-col gap-5 leading-relaxed mt-10 md:mt-14">
