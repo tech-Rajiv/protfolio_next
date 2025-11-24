@@ -41,7 +41,7 @@ function Hero() {
               <p className=" text-muted-foreground font-medium">
                 Hey, I'm{" "}
                 <span className="text-foreground font-semibold">
-                  Lorem ipsum
+                  Lorem Ipsum
                 </span>
               </p>
               <h2 className="text-foreground/90 dark:text-white font-bold text-xl sm:text-2xl lg:text-3xl">
